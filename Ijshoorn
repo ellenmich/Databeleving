@@ -1,0 +1,18 @@
+import processing.pdf.*;
+
+void setup(){
+    size(500, 800, P3D, "Ijshoorn.pdf");
+  background (255);
+  smooth();
+}
+
+void draw(){
+ //ellipse(250, 280, 200, 200);
+triangle(135, 300, 365, 300, 250, 700); 
+
+lights();
+translate(250, 280, 200);
+sphere(100);
+ 
+}
+
