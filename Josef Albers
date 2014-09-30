@@ -1,0 +1,45 @@
+import processing.pdf.*;
+
+color a;
+color b;
+color c;
+color d;
+int counter = 0;
+
+
+void setup(){
+  size (400, 400, PDF, "JosefAlbers.pdf");
+  noStroke();
+  colorMode(HSB,150, 150, 150);
+
+}
+
+void draw(){
+a = color(HSB, random(255), random(255), random(255));
+b = color(HSB, random(255), random(255), random(255));
+c = color(HSB, random(255), random(255), random(255));
+d = color(HSB, random(255), random(255), random(255));
+  
+  counter+=1;
+  
+ fill(a);
+ rect(0, 0, 400, 400);
+ fill(b);
+ rect(50, 50, 300, 300);
+ fill(c);
+ rect(100, 150, 200, 175);
+ fill(d);
+ rect(150, 200, 100, 100);
+
+
+ if(counter==9){
+   exit();
+ }
+ 
+ else{
+  PGraphicsPDF pdf = (PGraphicsPDF) g;  
+  pdf.nextPage(); 
+  }
+}
+
+
