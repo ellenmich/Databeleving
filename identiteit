@@ -1,0 +1,33 @@
+//visualisatie staat voor beweging(erg bewegelijk) en what you see is what you get (eenvoud)
+//rood is erg warm en gezellig
+//lijn die stijgt: steeds hogerop komen in het leven, gemotiveerd.
+
+color a;
+color b;
+color c;
+color d;
+color e;
+
+void setup(){
+  size(400,400);
+  background(255);
+  noStroke();
+  a = color(HSB, random(255), random(255), random(255));
+  b = color(HSB, random(255), random(255), random(255));
+  c = color(HSB, random(255), random(255), random(255));
+  d = color(HSB, random(255), random(255), random(255));
+  e = color(HSB, random(255), random(255), random(255));
+}
+
+void draw(){
+  fill(a);
+  triangle(70,300,125,200,175,300);
+  fill(b);
+  triangle(110,260,165,160,215,260);
+  fill(c);
+  triangle(150,220,205,120,255,220);
+  fill(d);
+  triangle(190,180,245,80,295,180);
+  fill(e);
+  triangle(230,140,285,40,335,140);
+}
